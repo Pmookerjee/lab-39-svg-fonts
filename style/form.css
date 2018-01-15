@@ -1,0 +1,93 @@
+form {
+  padding-top: 3.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Baumans";
+  color: orange;
+  padding-bottom: 2em;
+}
+
+#results {
+  font-family: "Baumans";
+  color: orange;
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.profileForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 2em;
+  color: ivory;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.profileForm input {
+  position: absolute;
+  opacity: 0;
+}
+
+ #unicorn {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 67px;
+  background: none;
+  border: none;
+  outline: none;
+} 
+
+#unicorn:hover {
+  padding-left: 1em;
+  outline: none;
+  border: none;
+}
+
+.button {
+  top: 0;
+  left: 0;
+  background-color: ivory;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  vertical-align:middle;
+  z-index: 1;
+  opacity: 1;
+}
+
+.profileForm:hover input ~ .button {
+  background-color: grey;
+}
+
+.profileForm input:checked ~ .button {
+  background-color: orange;  
+}
+
+h3 {
+  font-family: "Baumans";
+  margin: 0 auto;
+  padding-top: .5em;
+  padding-left: .2em;
+}
+
+.question {
+  font-family: "Baumans";
+  padding-left: .6em;
+  line-height: .5em;
+}
+
+.hidden {
+  display: none;
+}
+

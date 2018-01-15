@@ -1,0 +1,141 @@
+@import './fonts';
+
+body {
+  background: black;
+  font-family: 'Adamina';       
+}
+
+nav {
+  background:orange;
+  height:2em;
+  line-height:1em;
+  width: 100%;
+}
+ 
+ul.navbar {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+      
+li {
+  padding: .5em 1em;
+  height: 1.5em;
+  position:relative;
+  min-width: 100px;
+  list-style: none;
+  font-family: 'Baumans';     
+}
+
+li:active {
+  background: ivory;
+  color: black;
+}
+
+li:hover {
+  background: ivory;
+  color: black;
+  height: 1em;
+}
+
+.nestedUl {
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  top: 2em;
+  left: 0;
+}
+
+.nestedUl li {
+  padding: .5em 1em;
+  height: 1em;
+  line-height: 1em;
+}
+
+li:hover ul {
+  background: ivory;
+  display: flex;
+  color: black;
+}
+
+li:hover ul li:hover {
+  background: orange;
+  position: relative;
+
+}
+   
+li a{
+
+  text-decoration:none;
+  color: black; 
+}
+
+a:hover {
+  background: ivory;
+  color: black;
+}
+
+#profileHeader:before {
+  font-family: FontAwesome;
+  content: "\f007";
+  font-size: 1;
+  padding-right: .5em;
+  color: ivory;
+}
+#billingHeader:before {
+  font-family: FontAwesome;
+  content: "\f09d";
+  font-size: 1;
+  padding-right: .5em;
+  color: ivory;
+}
+#favoritesHeader:before {
+  font-family: FontAwesome;
+  content: "\f004";
+  font-size: 1;
+  padding-right: .5em;
+  color: ivory;
+}
+
+.profileLink:after {
+  font-family: FontAwesome;
+  content: "\f007";
+  font-size: 1em;
+  padding-left: 1em;
+}
+
+.billingLink:after {
+  font-family: FontAwesome;
+  content: "\f09d";
+  font-size: 1em;
+  padding-left: 1em;
+}
+
+.favoritesLink:after {
+  font-family: FontAwesome;
+  content: "\f004";
+  font-size: 1em;
+  padding-left: 1em;
+}
+
+a:after {
+    bottom:0;
+    content:"";
+    left:0;
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+h1 {
+  font-family: 'Adamina';
+  text-align: center;
+  color: ivory;
+}
+

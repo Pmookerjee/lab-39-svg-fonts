@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Adamina');
+
+/* akronim-regular - latin */
+@font-face {
+  font-family: 'Akronim';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/akronim-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Akronim Regular'), local('Akronim-Regular'),
+       url('./fonts/akronim/akronim-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/akronim/akronim-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/akronim/akronim-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/akronim/akronim-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/akronim/akronim-v7-latin-regular.svg#Akronim') format('svg'); /* Legacy iOS */
+}
+
+/* baumans-regular - latin */
+@font-face {
+  font-family: 'Baumans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/baumans-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Baumans Regular'), local('Baumans-Regular'),
+       url('./fonts/baumans/baumans-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/baumans/baumans-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/baumans/baumans-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/baumans/baumans-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/baumans/baumans-v7-latin-regular.svg#Baumans') format('svg'); /* Legacy iOS */
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Fun with Fonts n Dropdowns</title>
+  <meta name="author" content="Paula Mookerjee">
+  <script src="https://use.fontawesome.com/9dbfac7dea.js"></script>  
+  
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/form.css">
+  <link rel="stylesheet" href="../style/fonts.css"> 
+</head>
+
+<body>
+  <main>
+  <h1 id="profileHeader">Profile</h1>
+  <nav>
+    <ul class='navbar'>
+      <li><a href='../index.html'>Home</a></li>        
+      <li><a href=''>Account</a>
+        <ul class='nestedUl'>
+          <li class="profileLink"><a href='./profile.html'>Profile</a></li>
+          <li class="billingLink"><a href='./billing.html'>Billing</a></li>
+          <li class="favoritesLink"><a href='./favorites.html'>Favorites</a></li>
+        </ul>
+      </li>
+      <li><a href=''></a>Costumes
+        <ul class='nestedUl'>
+          <li>Performers</li>
+          <li>Cartoons</li>
+          <li>Professions</li>
+          <li>Animals</li>
+          <li>Historical</li>
+          <li>Celebrities</li>     
+        </ul></li>
+      <li><a href=''></a>Accessories
+        <ul class='nestedUl'>
+          <li>Hats</li>
+          <li>Wigs</li>
+          <li>Costumes</li>
+          <li>Miscellaneous</li> 
+        </ul></li>      
+      <li><a href=''></a>About
+        <ul class='nestedUl'>
+          <li>History</li>
+          <li>Contact</li>
+        </ul></li> 
+    </ui>
+  </nav>
+  <h2 id="results"></h2>
+  <form id="fabForm">
+  <h3>Important Questions to Ask Yourself</h3>
+  <label class="profileForm">
+    <input type="checkbox">
+    <span class="button"></span>
+    <span class="question">Are you a unicorn?</span>
+  </label>
+    
+  <label class="profileForm"> 
+    <input type="checkbox">
+    <span class="button"></span>    
+    <span class="question">Do you feel awesome?</span>
+  </label>
+    
+  <label class="profileForm">
+    <input type="checkbox">
+    <span class="button"></span>    
+    <span class="question">Do you believe in fairies?</span>
+  </label>
+      
+  <label class="profileForm">
+    <input type="checkbox">
+    <span class="button"></span>    
+    <span class="question">Can you dab? (the dance, my friends)</span>
+  </label>
+  <button id="unicorn" onclick="showResults(event)">
+    <img src="../assets/unicorn.png">
+  
+    </button>
+  <h3>Get results!</h3> 
+ </form>
+
+  </main>
+  <script>
+      function showResults(e){
+        e.preventDefault();
+        console.log('in the function')
+        document.getElementById("fabForm").style.display="none";
+        document.getElementById("results").innerHTML="You are definitely FABULOUS"
+      }
+  </script> 
+</body>
+</html>
